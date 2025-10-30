@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eternity Scgo | XII MIPA 5</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="description" content="Website kenangan XII MIPA 5 SMA Negeri 10 Padang - Keluarga Eternity Class">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Eternity">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="assets/images/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="assets/images/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="assets/images/icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/images/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="assets/images/icon-384x384.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/images/icon-512x512.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logoeter.jpg" alt="Logo">
+            <span>Eternity Class</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="now-we-are.html">Now We Are</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to <span>Eternity Class</span></h1>
+            <h2>XII MIPA 5</h2>
+            <p>Kami adalah keluarga kecil dari SMA NEGERI 10 PADANG yang penuh warna. Sebuah kisah tentang tawa, perjuangan, dan persahabatan yang abadi.</p>
+            <div class="quote">
+                "Once classmates, forever a family – Eternity Scgo."
+            </div>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn">Explore More <i class="fas fa-arrow-down"></i></a>
+                <a href="#" class="btn" onclick="openGuide(event)"><i class="fas fa-book-open"></i> Panduan</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="memories-section" id="memories">
+        <h2 class="section-title">Kenangan Bersama</h2>
+        <p class="section-subtitle">Setiap momen adalah cerita yang tak terlupakan</p>
+        
+        <div class="memories-grid">
+            <div class="memory-card">
+                <img src="assets/first meet.webp" alt="Foto Bersama 1">
+                <div class="memory-overlay">
+                    <h3>Hari Pertama Kita</h3>
+                    <p>Awal pertemuan yang menjadi awal persahabatan abadi</p>
+                </div>
+            </div>
+            
+            <div class="memory-card">
+                <img src="assets/foto2.webp" alt="Foto Bersama 2">
+                <div class="memory-overlay">
+                    <h3>Study Together</h3>
+                    <p>Berjuang bersama menghadapi ujian dan tugas</p>
+                </div>
+            </div>
+            
+            <div class="memory-card">
+                <img src="assets/foto3.webp" alt="Foto Bersama 3">
+                <div class="memory-overlay">
+                    <h3>Perayaan Bersama</h3>
+                    <p>Kebersamaan dalam setiap perayaan dan acara kelas</p>
+                </div>
+            </div>
+            
+            <div class="memory-card">
+                <img src="assets/foto4.webp" alt="Foto Bersama 4">
+                <div class="memory-overlay">
+                    <h3>Petualangan Kita</h3>
+                    <p>Momen seru di luar kelas yang tak terlupakan</p>
+                </div>
+            </div>
+            
+            <div class="memory-card">
+                <img src="assets/foto6.webp" alt="Foto Bersama 6">
+                <div class="memory-overlay">
+                    <h3>Berenang</h3>
+                    <p>Tawa, cipratan air, dan kebersamaan yang tak tergantikan.</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="assets/foto5.webp" alt="Foto Bersama 5">
+                <div class="memory-overlay">
+                    <h3>Keluarga Selamanya</h3>
+                    <p>Ikatan yang terjalin melampaui ruang kelas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-guide" id="guideModal">
+        <div class="modal-guide-content">
+            <div class="modal-guide-header">
+                <button class="close-guide-btn" onclick="closeGuide()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2>Panduan Penggunaan Website</h2>
+                <p>Hai Eternity People! 👋<br>Selamat datang di panduan menggunakan website kelas kita. </p>
+            </div>
+            <div class="modal-guide-body">
+                <div class="guide-step">
+                    <div class="step-title">
+                        <span class="step-number">1</span>
+                        <i class="fas fa-home step-icon"></i>
+                        Home
+                    </div>
+                    <div class="step-description">
+                        Halaman pertama yang langsung muncul pas kalian buka web. Di sini ada logo Eternity Class, sambutan, deskripsi singkat, dan kutipan khas kita: <strong>"Once classmates, forever a family – Eternity Scgo."</strong> Kalian juga bisa klik tombol <strong>"Explore More"</strong> buat lanjut ke halaman About. Intinya, halaman ini jadi "tampilan awal" web kita.
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-title">
+                        <span class="step-number">2</span>
+                        <i class="fas fa-users step-icon"></i>
+                        About
+                    </div>
+                    <div class="step-description">
+                        Di halaman About, kalian bisa lihat foto wali kelas kita dan semua anggota kelas Eternity lengkap dengan nama kalian dengan cara klik salah satu nama, bakal muncul popup card yang nunjukin: <strong>Foto orangnya, Nama lengkap, Tempat & tanggal lahir, dan Quotes pribadi</strong> dari masing-masing 😊
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-title">
+                        <span class="step-number">3</span>
+                        <i class="fas fa-images step-icon"></i>
+                        Gallery
+                    </div>
+                    <div class="step-description">
+                        Bagian ini jadi tempat kumpulnya momen-momen terbaik Eternity Scgo selama masa sekolah. Ada grid foto-foto, masing-masing punya overlay dan link menuju <strong>Google Drive</strong> buat lihat versi lengkapnya. Album yang ada: 📷 Eter Dump, 🳠Masak-masak, 🎭 Drama Sejarah, 🔥 Bakar"an Sapi, 🎓 Wisuda Tahfiz, 🚌 Trip Tour, 🌙 BUKBER, 👯 Aye Hatta. Semua foto dikasih efek hover, pas kursor diarahkan muncul nama acara dan ikon 🔗 buat buka Drive.
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-title">
+                        <span class="step-number">4</span>
+                        <i class="fas fa-graduation-cap step-icon"></i>
+                        Now We Are
+                    </div>
+                    <div class="step-description">
+                        Nah ini update-an kehidupan setelah lulus! Isinya daftar teman-teman yang sekarang lagi di kuliah di mana ataupun kerja di mana.
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-title">
+                        <span class="step-number">5</span>
+                        <i class="fas fa-envelope step-icon"></i>
+                        Contact
+                    </div>
+                    <div class="step-description">
+                        Halaman terakhir di website ini jadi tempat buat ngasih salam dan pesan. Di bagian atas, ada tiga ikon media sosial: <strong>📸 Instagram, 🎵 TikTok, 🎧 Spotify</strong> (playlist spesial yang jadi soundtrack masa SMA). Di bawahnya ada form kontak yang berisi: Nama, Email, dan Pesan. Kalian bisa isi kalau mau ngirim ucapan, kesan, atau pesan untuk kelas. Begitu dikirim, pesannya bakal masuk ke email resmi kelas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Eternity Scgo – XII MIPA 5 | Made with love and friendship.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/eternity.scgo?igsh=NWtnMndlNDlnOGxk" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@eternity.scgo?_t=ZS-90qVc9IyBBV&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://open.spotify.com/playlist/07Y5gOhcbRoLecKJ04BlSe?si=xJZnAxs3QSWP4jklpPnnhw&utm_source=copy-link&nd=1&dlsi=99b2b33f4dbf452a" target="_blank"><i class="fab fa-spotify"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- PWA Installation Script -->
+    <script src="js/pwa-install.js"></script>
+</body>
+</html>
