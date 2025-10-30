@@ -1,0 +1,17 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/about", "destination": "/about.html" },
+      { "source": "/gallery", "destination": "/gallery.html" },
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/memory", "destination": "/memory.html" }
+    ],
+    "redirects": [
+      { "source": "/index.html", "destination": "/", "permanent": true },
+      { "source": "/about.html", "destination": "/about", "permanent": true },
+      { "source": "/gallery.html", "destination": "/gallery", "permanent": true },
+      { "source": "/contact.html", "destination": "/contact", "permanent": true },
+      { "source": "/memory.html", "destination": "/memory", "permanent": true }
+    ]
+  }
+  
